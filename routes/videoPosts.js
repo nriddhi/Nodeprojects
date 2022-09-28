@@ -1,6 +1,9 @@
 const router = require('express').Router();
 const videoPosts = require('../models/posts');
 
+router.get('/kmn', (req, res) => { res.send("kmn")
+});
+
 router.post('/create', async function (req, res) {
 
     try {
