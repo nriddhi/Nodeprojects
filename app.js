@@ -5,7 +5,7 @@ const mongoose = require('mongoose');
 const app = new Express();
 const postsRoute = require('./routes/videoPosts');
 
-MONGO_URL="mongodb+srv://rid:riddhi@cluster0.bqixv.mongodb.net/video?retryWrites=true&w=majority";
+//MONGO_URL="mongodb+srv://rid:riddhi@cluster0.bqixv.mongodb.net/video?retryWrites=true&w=majority";
 
 app.use(Express.json());
 app.use(cors());
