@@ -10,6 +10,9 @@ app.use(cors());
 
 app.use('/api', postsRoute);
 
+app.get('/', (req, res) => { res.send("kire")
+});
+
 mongoose.connect(process.env.MONGO_URL)
 .then(res=> console.log('MongoDB Connected Succesfully'),
      err => console.log('Connection Error: ' + err)
