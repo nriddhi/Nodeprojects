@@ -20,5 +20,6 @@ mongoose.connect(process.env.MONGO_URL)
      err => console.log('Connection Error: ' + err)
 );
 
-app.listen();
+app.listen('3001', ()=> {console.log('MongoDB Connected Succesfully from 3001')});
+
 
